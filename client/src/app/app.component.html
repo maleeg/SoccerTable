@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="section">
+    <table class="table">
+      <thead>
+        <th>Club</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GD</th>
+        <th>Pts</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let team of data">
+          <td>{{team.teams}}</td>
+          <td>{{team.wins}}</td>
+          <td>{{team.draws}}</td>
+          <td>{{team.losses}}</td>
+          <td>{{team.goals}}</td>
+          <td>{{team.goalDifferences}}</td>
+          <td>{{team.points}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
